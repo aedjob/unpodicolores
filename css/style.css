@@ -1,0 +1,114 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h3 {
+    color: #ed5679;;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.5;
+}
+
+/* --- NAVBAR --- */
+
+.header {
+    background-color: grey;
+    background-image: url(/resources/img/main.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.nav-item {
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 750;
+    text-align: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* --- MAIN --- */
+
+.welcome__img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome__img img{
+    width: 20rem;
+}
+
+.index__projects img{
+    height: 10rem;
+}
+
+.index__welcome{
+    padding: 1rem;
+}
+
+.index__welcome p{
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+.index__contact-banner {
+    background-color: #ed5679;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index__contact-banner h2{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.index__contact-banner p{
+    padding: 2rem;
+}
+
+.index__contact-banner a{
+    text-decoration: none;
+    color: #ed5679;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+}
+

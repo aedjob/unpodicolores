@@ -1,0 +1,426 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ---------------LAYOUT------------------- */
+
+
+#grid__layout{
+    display: grid;
+    grid-template-areas:
+    "head"
+    "welc"
+    "welcimg"
+    "conntxt"
+    "connbnr"
+    "footer";
+    grid-row-gap: 10px;
+    grid-column-gap: 0px;
+}
+
+/* ---------------HEADER------------------- */
+
+header{
+    grid-area: head;
+    background-color: grey;
+    background-image: url(/img/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.header h1{
+    color: white;
+    padding: 0rem;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+/* ---NAVBAR--- */
+
+.header__navbar ul{
+    padding: 2rem;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.header__navbar li{
+    padding-top: .25rem;
+    display: inline-block;  
+}
+
+.header__navbar a{
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: white;  
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header__navbar a:hover{
+    color: #ed5679;
+    text-shadow: 2px 2px 4px white;
+}
+
+/* ---------------CONTENT------------------- */
+
+.welcome__content {
+    background-color: white;
+    line-height: 1.6;
+    padding: 1rem;
+    grid-area: welc;
+}
+
+h2{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 900;
+    padding: 1rem;
+    text-align: center;
+}
+
+.welcome p{
+    background-color: white;
+    line-height: 1.8;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.welcome__aside{
+    background-color:white;
+    padding: 2rem;
+    grid-area: welcimg;
+}
+
+.welcome__img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.welcome__img img{
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    height: 12rem;
+}
+
+#connect__text{
+    grid-area: conntxt;
+}
+
+#connect__text h3{
+    text-transform: uppercase;
+    font-style: italic;
+    color: #ed5679;
+    padding: 1rem;
+}
+
+#connect__text p{
+    padding: 1rem;
+}
+
+
+
+#connect__banner {
+    background-color: #ed5679;
+    padding: 3rem;
+    margin: 1rem;
+    grid-area: connbnr;
+}
+
+#connect__banner h3{
+    color: white;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: center;
+}
+
+#connect__banner p{
+    padding: 2rem;
+    text-align: center;
+}
+
+#connect__banner a{
+    text-decoration: none;
+    color: #ed5679;
+    background-color: white;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: 750;
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    display: block;
+    background-color: #ed5679;
+    border-top: 1px;
+    margin: 2rem;
+
+}
+
+/* ---------------FOOTER------------------- */
+
+.footer{
+    grid-area: footer;
+}
+
+.footer label{
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 750;
+    font-size: small;
+    padding: 1rem;
+}
+
+#footer__email{
+    background-color: rgba(128, 128, 128, 0.24);
+    border: none;
+    padding: 0.25rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+#footer__submit{
+    padding: .25rem;
+    border: none;
+    background-color: #ed567950;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#logo2{
+    display: none;
+}
+
+.footer__right{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+#footer__icons{
+    width: 250px;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding-right: 1rem;
+}
+
+#footer__icons img{
+    width: 30px;
+}
+
+.footer__right p{
+    font-size: small;
+    padding-top: 1rem;
+    text-align: start;
+    font-style: italic;
+}
+
+
+
+/* tablet */
+@media (min-width: 680px){
+
+    .welcome__aside{
+        background-color:white;
+        padding: 2rem;
+        grid-area: welcimg;
+    }
+    
+    .welcome__img{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .welcome__img img{
+        width: 150px;
+        padding: 0.5rem;
+        border-radius: 2rem;
+    }    
+    }
+    
+/* desktop */
+@media(min-width:992px){
+
+    .welcome{
+        display: flex;
+    }
+    
+    h2{
+        text-align: left;
+    }
+
+    .welcome__content{
+        width: 75%;
+    }
+
+    .welcome__aside{
+        width: 45%;
+    }
+
+    .welcome__img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .welcome__img img{
+        width: 50%;
+    }
+
+    #connect__banner {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #connect__banner h3{
+        padding: 1rem;
+    }
+    
+    #connect__banner p{
+        padding: 1rem;
+    }
+    
+    .footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__left{
+        width: 20%;
+    }
+
+    #logo2{
+        width: 15%;
+        display: block;
+    }
+
+    .footer__right{
+        width: 20%;
+    }
+
+    #footer__icons{
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        padding-right: 3rem;
+    }
+
+    #footer__icons img{
+        width: 12%;
+    }
+
+    .footer__right p{
+        font-size: x-small;
+        padding: 1rem;
+        text-align: end;
+        font-style: italic;
+    }
+
+
+    }
+
+
+
+/* ---------------GALLERY------------------- */
+
+.projects__img{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.projects__img img{
+    width: 30%;
+    height: 20rem;
+}
+
+.projects__img img:hover{
+    transform: scale(1.2,1.2);
+    box-shadow: 5px 5px 5px #ed567981;
+}
+
+/* ---------------SUPPORT------------------- */
+
+.support{
+    display: flex;
+    padding: 1rem;
+}
+
+.support p{
+    width: 60%;
+}
+
+.support__button{
+    width: 20%;
+}
+
+.support__button h4{
+    background-color: #ed5679;
+    padding: .7rem;
+    text-align: center;
+    color: white;
+    margin-bottom: .5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* ---------------CONTACT------------------- */
+
+.contact__text{
+    padding: 1rem;
+    line-height: 2;
+}
+
+.contact__form{
+    padding: 2rem;
+}
+
+.contact__form label{
+    font-size: small;
+}
+.contact__form input, textarea{
+    background-color: rgba(128, 128, 128, 0.24);
+    width: 100%;
+    border: none;
+    padding: 0.25rem;
+    margin: .2rem;
+    margin-bottom: 1rem;
+}
+
+#contact__num{
+    display: flex;
+    gap: 1rem;
+}
+
+#contact__phone{
+    width: 50%;
+}
+
+#contact__postcode{
+    width: 50%;
+}
+
+#contact__submit{
+    width: 10%;
+    padding: .7rem;
+    background-color: #ed567950;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
