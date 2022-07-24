@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Un po di colores</title>
 </head>
 
@@ -21,8 +21,8 @@
     <header>
 
         <nav class="navbar navbar-expand-lg header">
-            <a class="navbar-brand" href="index.html">
-                <img src="resources/logo2.png" alt="">
+            <a class="navbar-brand" href="../index.html">
+                <img class="navbar__logo" src="../resources/logo2.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -33,16 +33,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">HOME</a>
+                        <a class="nav-link" href="../index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/gallery.html">GALLERY</a>
+                        <a class="nav-link" href="../pages/gallery.html">GALLERY</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/contact.html">CONTACT US</a>
+                        <a class="nav-link" href="../pages/contact.html">CONTACT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/support.html">SUPPORT ART</a>
+                        <a class="nav-link" href="../pages/support.html">SUPPORT ART</a>
                     </li>
                 </ul>
             </div>
@@ -73,13 +73,13 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="resources/img/buckets_02.jpg" class="d-block w-100" alt="...">
+                                <img src="../resources/img/buckets_02.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="resources/img/project_2A.jpg" class="d-block w-100" alt="...">
+                                <img src="../resources/img/project_2A.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="resources/img/project_2B.jpg" class="d-block w-100" alt="...">
+                                <img src="../resources/img/project_2B.jpg" class="d-block w-100" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#index__carousel"
@@ -108,7 +108,7 @@
                 <div class="index__contact-banner col-sm-12 col-md-12 col-lg-12">
                     <h2>We'd love to hear from you!</h2>
                     <p>We love connecting with our clients and creating collaborative art.</p>
-                    <a href="contact.html">Connect with us</a>
+                    <a class="btn btn-primary" href="../pages/contact.html" role="button">Connect with us</a>
                 </div>
             </div>
         </section>
@@ -136,7 +136,7 @@
                 </table>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-6">
-                <img src="/resources/img/leaf.jpg" alt="">
+                <img src="../resources/img/leaf.jpg" alt="">
             </div>
         </section>
 
@@ -152,7 +152,31 @@
     </main>
 
     <footer>
-
+        <hr>
+        <section class="footer container-fluid">
+            <div class="footer__contact col-lg-4 col-md-12 col-sm-12">
+                <p>Stay in touch</p>
+                <div class="input-group input-group-sm mb-3">
+                    <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary footer__contact-btn" type="button">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__logo col-lg-4 col-md-6 col-sm-12">
+                <img src="../resources/img/logo.jpg" alt="">
+            </div>
+            <div class="footer__social col-lg-4 col-md-6 col-sm-12">
+                <div class="row footer__social-icons">
+                    <img src="../resources/img/patreon.png" alt="">
+                    <img src="../resources/img/patreon.png" alt="">
+                    <img src="../resources/img/patreon.png" alt="">
+                </div>
+                <div class="row footer__social-trademark">
+                    <p>© 2022 Un Po di Colores Pty Ltd</p>
+                </div>
+            </div>
+        </section>
     </footer>
 
     <!-- JavaScript Bundle with Popper -->
