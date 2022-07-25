@@ -92,6 +92,17 @@ p{
 .footer__social{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px){
+    .footer__social{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }    
 }
 
 .footer__social img{
