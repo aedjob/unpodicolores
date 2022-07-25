@@ -1,7 +1,8 @@
+/* variables to standardise colour and size */
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 section {
   padding: 1rem; }
