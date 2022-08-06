@@ -1,0 +1,29 @@
+// Use for base reset and selected fonts
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: $font-family;
+}
+
+section {
+    padding: 1rem;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h3 {
+    color: $color-primary;;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p{
+    line-height: 1.5;
+}

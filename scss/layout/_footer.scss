@@ -1,0 +1,45 @@
+// LAYOUTS: any snippet building page structure, and using flex/grid (e.g., navbar or footer)
+
+/* --- FOOTER --- */
+
+footer {
+    display: flex;
+    .footer{
+        &__contact p{
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        &__contact-btn{
+            background-color: #ed567932;
+            border-color: #ed567932;
+        }
+        &__contact-btn:hover{
+            background-color: #ed567956;
+            border-color: #ed567932;
+        }
+        &__logo img{
+            width: 12rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__social{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        &__social img{
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
+        }
+        &__social-icons{
+            margin-left: auto;
+        }
+        &__social-trademark{
+            margin-left: auto;
+            font-size: .9rem;
+            color: grey;
+        }
+    }
+}

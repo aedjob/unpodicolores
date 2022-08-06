@@ -1,195 +1,20 @@
+// use this file for imports only
 
-@import "variables";
+@import "utilities/variables"; // (always start with variables)
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: $font-family;
-}
+@import "base";
 
-section {
-    padding: 1rem;
-}
+@import 'components/button';
+@import 'components/card';
+@import 'components/carousel';
 
-h2 {
-    font-weight: 900;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-style: italic;
-}
+@import 'views/main';
+@import 'views/gallery';
+@import 'views/contact';
+@import 'views/support';
 
-h3 {
-    color: $color-primary;;
-    font-weight: 600;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
+@import 'layout/header';
+@import 'layout/footer';
 
-p{
-    line-height: 1.5;
-}
-
-/* --- NAVBAR --- */
-
-.header {
-    background-color: grey;
-    background-image: url(../resources/img/main.jpg);
-    width: 100%;
-    background-size: cover;
-}
-
-.navbar__logo:hover{
-    background-image: url(../resources/logo3.png);
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.nav-item {
-    padding-right: 3rem;
-    padding-left: 3rem;
-}
-
-.nav-link {
-    color: $color-secondary;
-    font-size: 1.1rem;
-    font-weight: 750;
-    text-align: center;
-}
-
-.navbar-collapse {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-/* --- FOOTER --- */
-
-footer {
-    display: flex;
-    .footer{
-        &__contact p{
-            text-transform: uppercase;
-            font-weight: 900;
-        }
-        &__contact-btn{
-            background-color: #ed567932;
-            border-color: #ed567932;
-        }
-        &__contact-btn:hover{
-            background-color: #ed567956;
-            border-color: #ed567932;
-        }
-        &__logo img{
-            width: 12rem;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        &__social{
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-        }
-        &__social img{
-            width: 4rem;
-            height: 4rem;
-            padding: 1rem;
-        }
-        &__social-icons{
-            margin-left: auto;
-        }
-        &__social-trademark{
-            margin-left: auto;
-            font-size: .9rem;
-            color: grey;
-        }
-    }
-}
-
-@media (max-width: 768px){
-    .footer__social{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-    }    
-}
-
-/* --- MAIN --- */
-
-.welcome{
-    &__img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    &__img img{
-        width: 20rem;
-    }
-}
-
-.index{
-    &__projects img{
-        height: 10rem;
-    }
-    &__welcome{
-        padding: 1rem;
-    }
-    &__welcome p{
-        text-align: justify;
-        padding-top: 1rem;
-    }
-    &__contact-banner {
-        background-color: $color-primary;
-        width: 95%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h2{
-            color: $color-secondary;
-            font-size: 1.2rem;
-        }
-        p{
-            padding: 2rem;
-        }
-        a{
-            text-decoration: none;
-            color: $color-primary;
-            background-color: $color-secondary;
-            text-align: center;
-            padding: 1rem;
-            text-transform: uppercase;
-            border-radius: 1rem;
-            font-weight: 750;
-            display: flex;
-            justify-content: center;
-            border-color: $color-secondary;
-            &:hover{
-                background-color: $color-primary;
-                border-color: $color-secondary;
-                border-width: .1rem;
-            }
-        }
-    }    
-}
-
-/* --- GALLERY --- */
-
-.gallery__photos{
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    gap: 1rem;
-    flex-wrap: wrap;
-    img{
-        width: 20rem;
-        height: 16rem;
-        &:hover{
-            transform: scale(1.2,1.2);
-            transition: .5s ease-in-out;
-        }
-    }
-}
+@import 'utilities/operators';
+@import 'utilities/mediaqueries'; //(mediaqueries always at the end)

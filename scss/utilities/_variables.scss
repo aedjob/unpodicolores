@@ -2,7 +2,9 @@
 $color-primary: #ed5679;
 $color-secondary: white;
 $color-accent: black;
+$color-disabled: grey;
 
 $font-size: 16px;
-$font-title: 32px;
+$font-title: $font-size * 2;
+$font-small: $font-size - 4;
 $font-family: 'Montserrat', sans-serif;
