@@ -1,0 +1,22 @@
+.cards__flex{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    border-color: $color-secondary;
+    box-shadow: 2px 2px 4px #0000001e;
+}
+
+.card-body img{
+    width: 100px;
+    display: block;
+    padding: 10px;
+}
+
+.card-body a{
+    display: block;
+}

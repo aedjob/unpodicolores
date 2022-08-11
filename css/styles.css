@@ -22,6 +22,32 @@ h3 {
 p {
   line-height: 1.5; }
 
+.btn__support, .btn__support:hover {
+  background-color: #ed5679;
+  border-color: white;
+  color: white; }
+  .btn__support:hover {
+    background-color: black; }
+
+.cards__flex {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem; }
+
+.card {
+  border-color: white;
+  box-shadow: 2px 2px 4px #0000001e; }
+
+.card-body img {
+  width: 100px;
+  display: block;
+  padding: 10px; }
+
+.card-body a {
+  display: block; }
+
 /* --- MAIN --- */
 .welcome__img {
   display: flex;
@@ -71,16 +97,16 @@ p {
       border-width: .1rem; }
 
 /* --- GALLERY --- */
-.gallery__photos, .gallery__photos--highlighted {
+.gallery__photos {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
   gap: 1rem;
   flex-wrap: wrap; }
-  .gallery__photos img, .gallery__photos--highlighted img {
+  .gallery__photos img {
     width: 20rem;
     height: 16rem; }
-    .gallery__photos img:hover, .gallery__photos--highlighted img:hover {
+    .gallery__photos img:hover {
       transform: scale(1.2, 1.2);
       transition: .5s ease-in-out; }
 
@@ -142,9 +168,6 @@ footer {
     margin-left: auto;
     font-size: .9rem;
     color: grey; }
-
-.gallery__photos--highlighted {
-  background-color: rgba(255, 255, 0, 0.5); }
 
 @media (max-width: 768px) {
   .footer__social {
