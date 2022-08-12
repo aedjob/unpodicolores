@@ -29,6 +29,12 @@ p {
   .btn__support:hover {
     background-color: black; }
 
+.form-control {
+  margin-bottom: 20px; }
+  .form-control:focus {
+    border-color: #ed5679;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ed5679; }
+
 .cards__flex {
   padding-top: 50px;
   display: flex;
@@ -109,6 +115,12 @@ p {
     .gallery__photos img:hover {
       transform: scale(1.2, 1.2);
       transition: .5s ease-in-out; }
+
+.form-control {
+  margin-bottom: 20px; }
+  .form-control:focus {
+    border-color: #ed5679;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #ed5679; }
 
 /* --- NAVBAR --- */
 .header {
